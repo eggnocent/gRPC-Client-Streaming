@@ -1,0 +1,7 @@
+{
+    "protoc.includePaths": [
+      "${workspaceFolder}", 
+      "${workspaceFolder}/ecommerce"
+    ]
+  }
+  

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ecommerce.order;
+
+option go_package = "grpc-course-protobuf/pb/ecommerce/order";
+
+
+// mengimport dari sub package
+import "ecommerce/product/product.proto";
+
+message Order {
+    int64 id = 1;
+    string number = 2;
+    repeated ecommerce.product.Product products = 3; // contoh path import dari sub package
+}
